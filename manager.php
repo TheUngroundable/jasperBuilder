@@ -1,5 +1,5 @@
 <?php
-$url = "localhost/jsper/jsper.php?";
+$url = "localhost/jasperBuilder/jasper.php?";
 $outputUrl = "output.txt";
 
 $num_creditlines = 10;
