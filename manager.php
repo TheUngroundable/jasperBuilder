@@ -2,7 +2,7 @@
 $url = "localhost/jasperBuilder/template.php?";
 $outputUrl = "output.txt";
 
-$num_creditlines = 10;
+$num_creditlines = 70;
 $num_partners = 3;
 $num_details = 30;
 

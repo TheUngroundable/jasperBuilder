@@ -64,29 +64,78 @@
 
 
 	//asset details
+	$detail_type = "OLD";
 	for($ap = 1; $ap <= $applicants; $ap++){
 		for($i = 1; $i <= $asset_details_lines; $i++){
 			?>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_ADDR_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_APPL_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_CYEAR_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_FRN_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_LCHARGE_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_NARE_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_NETRENT_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_NFLATS_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_PROP_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_SQMLS_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_SQMPA_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_TYP_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_VBANK_<?php echo $i ?>" class="java.lang.String"/>
-			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_VCUST_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_ADDR_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_APPL_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_CYEAR_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_FRN_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_LCHARGE_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_NARE_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_NETRENT_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_NFLATS_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_PROP_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_SQMLS_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_SQMPA_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_TYP_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_VBANK_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_VCUST_<?php echo $i ?>" class="java.lang.String"/>
 			<?php
 		}
 		?>
-		<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_VBANK_TOTAL" class="java.lang.String"/>
-		<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_NETRENT_TOTAL" class="java.lang.String"/>
-		<field name="AP<?php echo $ap ?>_ASSETS_DTLS_OLD_VCUST_TOTAL" class="java.lang.String"/>
+		<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_VBANK_TOTAL" class="java.lang.String"/>
+		<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_NETRENT_TOTAL" class="java.lang.String"/>
+		<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_VCUST_TOTAL" class="java.lang.String"/>
 		<?php
 	}
+
+	$detail_type = "NEW";
+	for($ap = 1; $ap <= $applicants; $ap++){
+		for($i = 1; $i <= $asset_details_lines; $i++){
+			?>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_ADDR_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_APPL_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_CYEAR_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_FRN_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_LCHARGE_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_NARE_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_NETRENT_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_NFLATS_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_PROP_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_SQMLS_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_SQMPA_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_TYP_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_VBANK_<?php echo $i ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_VCUST_<?php echo $i ?>" class="java.lang.String"/>
+			<?php
+		}
+		?>
+		<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_VBANK_TOTAL" class="java.lang.String"/>
+		<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_NETRENT_TOTAL" class="java.lang.String"/>
+		<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type?>_VCUST_TOTAL" class="java.lang.String"/>
+		<?php
+	}
+
+	$detail_type = "OLD";
+	for($ap = 1; $ap <= $applicants; $ap++){
+		for($band = 0; $band < $num_details_bands; $band++){
+		?>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type ?>_TOTALS_<?php echo $band ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type ?>_OVERFLOW_<?php echo $band ?>" class="java.lang.String"/>	
+		<?php
+		}
+	}
+	
+	$detail_type = "NEW";
+	for($ap = 1; $ap <= $applicants; $ap++){
+		for($band = 0; $band < $num_details_bands; $band++){
+		?>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type ?>_TOTALS_<?php echo $band ?>" class="java.lang.String"/>
+			<field name="AP<?php echo $ap ?>_ASSETS_DTLS_<?php  echo $detail_type ?>_OVERFLOW_<?php echo $band ?>" class="java.lang.String"/>	
+		<?php
+		}
+	}
+
 ?>

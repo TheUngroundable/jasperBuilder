@@ -5,7 +5,7 @@ for($band = 0; $band < $num_details_bands; $band++){
     ?>
     <!-- ASSETS DETAILS AP<?php  echo $applicant_number ?>-->	
     <band height="769">
-        <printWhenExpression><![CDATA[NOT(EXACT($F{KVR_CUSTOMER_CLASSIFICATION},"C"))]]></printWhenExpression>
+        <printWhenExpression><![CDATA[AND(AND(NOT(EXACT($F{KVR_CUSTOMER_CLASSIFICATION},"C")), $F{ASSETS_NDG_NUMBER_AP<?php echo $applicant_number ?>} != null), EXACT($F{AP<?php echo $applicant_number ?>_ASSETS_DTLS_<?php  echo $detail_type ?>_OVERFLOW_<?php echo $band ?>}, "Y"))]]></printWhenExpression>
         <frame>
             <reportElement x="0" y="0" width="555" height="450" uuid="b2495a69-21b2-4961-9987-5aa93215d37b"/>
             <frame>

@@ -196,7 +196,9 @@ $y+=12;
     ?>
     <!-- DETAIL TOTAL-->
     <frame>
-    <reportElement positionType="Float" x="0" y="<?php echo $y ?>" width="528" height="12" uuid="f636ef24-9ee3-4594-98a1-e6507b760653"/>
+    <reportElement positionType="Float" x="0" y="<?php echo $y ?>" width="528" height="12" uuid="f636ef24-9ee3-4594-98a1-e6507b760653">
+        <printWhenExpression><![CDATA[EXACT($F{AP<?php echo $applicant_number ?>_ASSETS_DTLS_<?php  echo $detail_type ?>_TOTALS_<?php echo $band ?>}, "Y")]]></printWhenExpression>
+    </reportElement>
     <textField isStretchWithOverflow="true" isBlankWhenNull="true">
         <reportElement positionType="Float" stretchType="ElementGroupHeight" x="242" y="0" width="32" height="12" uuid="2fa18cc7-01d2-48cc-b092-9452aeaa106d"/>
         <box leftPadding="2" rightPadding="0">
